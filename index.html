@@ -687,6 +687,19 @@
     color: var(--section-accent) !important;
     fill: var(--section-accent) !important;
   }
+  /* Archetype diagrams get larger fonts since they have more room */
+  .illustration.archetype .mermaid .node .nodeLabel,
+  .illustration.archetype .mermaid .node foreignObject div,
+  .illustration.archetype .mermaid .node foreignObject p,
+  .illustration.archetype .mermaid .node text {
+    font-size: 19px !important;
+    line-height: 1.5 !important;
+  }
+  .illustration.archetype .mermaid .edgeLabel,
+  .illustration.archetype .mermaid .edgeLabel foreignObject div,
+  .illustration.archetype .mermaid .edgeLabel span {
+    font-size: 16.5px !important;
+  }
   /* instance-card illustrations use the HARNESS accent (var --instance-accent) */
   .instance-card .illustration .mermaid .node.accent rect,
   .instance-card .illustration .mermaid .node.accent polygon,
